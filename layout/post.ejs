@@ -2,6 +2,14 @@
   <div class="post-title">
     <h2 class="title"><%= page.title %></h2>
   </div>
+  <div class="tag">
+
+ <%- list_tags(page.tags, {
+    show_count: false,
+    class: 'article-tag'
+  }) %>
+ 
+  </div>
    <div class="post-meta">
     <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
   </div>

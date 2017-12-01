@@ -1,5 +1,23 @@
 Menu:
   Home: /
   Archives: /archives
-  Github: https://github.com/ahonn
-  RSS: http://91mnt.info
+  Github: https://github.com/vevlins
+  RSS: /atom.xml
+
+Site:
+  Logo: img/logo.png
+
+Intro:
+  SNS:
+    Weibo: 
+    Zhihu: 
+    Email: 
+  Education: 
+    Bachelor:
+    Master:
+    Phd:
+  Work: [{
+    Company: ,
+    Title:
+  }]
+

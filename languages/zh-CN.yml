@@ -2,7 +2,13 @@ Menu:
   Home: 首页
   Archives: 归档
   Github: 软件仓
+  About: 关于
 
 Paginator:
   Prev: 上一页
   Next: 下一页
+
+Post:
+  Time: 时间
+  Category: 分类
+  

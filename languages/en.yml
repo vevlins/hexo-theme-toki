@@ -1,0 +1,13 @@
+Menu:
+  Home: Home
+  Archives: Archives
+  Github: Github
+  About: About
+
+Paginator:
+  Prev: Prev
+  Next: Next
+
+Post:
+  Time: Time
+  Category: Category

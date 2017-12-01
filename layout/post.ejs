@@ -9,7 +9,7 @@
                     <i class="fa fa-calendar" aria-hidden="true"></i>                    
                     <%- date(page.date, "YYYY-MM-DD") %>   
                 </a>
-                <% if(page.categories.length > 0) { %>
+                <% if(page.categories && (page.categories.length > 0)) { %>
                 <a class="category">
                     <i class="fa fa-th" aria-hidden="true"></i>  
                 </a>
@@ -18,7 +18,7 @@
                        show_count: false,
                         class: 'category'
                    }) %>
-                <% if(page.tags.length > 0) { %>
+                <% if(page.tags && (page.tags.length > 0)) { %>
                 <a class="tag">
                     <i class="fa fa-tags" aria-hidden="true"></i>  
                 </a>

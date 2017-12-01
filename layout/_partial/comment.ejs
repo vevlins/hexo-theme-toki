@@ -1,26 +1,15 @@
 <div id="comments"></div>
+
 <script>
-  var gitment = new Gitment({
+    var gitment = new Gitment({
     // 根据文章标题设置唯一评论id
     id: window.location.herf,
-    owner: 'Vevlins',
-    repo: 'Vevlins.github.io',
+    owner: "<%= theme.Comment.Owner %>",
+    repo: "<%= theme.Comment.Repo %>",
     oauth: {
-      client_id:  '8d83609a651e972e308d',
-      client_secret: 'db70b2bac2d75a88a78ebe04f556a0502cc3dd2b',
-    },
+      client_id:"<%= theme.Comment.Id %>",
+      client_secret: "<%= theme.Comment.Secret %>",
+    }
   })
-
-
-  //   var gitment = new Gitment({
-  //   // 根据文章标题设置唯一评论id
-  //   id: window.location.herf,
-  //   owner: '<%- theme.Comment.Owner %>',
-  //   repo: ' <%- theme.Comment.Repo %>',
-  //   oauth: {
-  //     client_id:  '<%- theme.Comment.Id %>',
-  //     client_secret: '<%- theme.Comment.Secret %>',
-  //   },
-  // })
   gitment.render('comments')
 </script>

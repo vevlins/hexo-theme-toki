@@ -1,19 +1,37 @@
 <article class="post">
-  <div class="post-title">
-    <h2 class="title"><%= page.title %></h2>
-  </div>
-  <div class="tag">
-
- <%- list_tags(page.tags, {
-    show_count: false,
-    class: 'article-tag'
-  }) %>
- 
-  </div>
-   <div class="post-meta">
-    <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
-  </div>
-  <div class="post-content">
-    <%- page.content %>
-  </div>
-</article>
+            <h1>
+                <a class="title" href="<%- url_for(page.path) %>"> 
+                    <%= page.title %> 
+                </a>
+            </h1>
+            <div class="meta">
+                <a class="date"> 
+                    <i class="fa fa-calendar" aria-hidden="true"></i>                    
+                    <%- date(page.date, "YYYY-MM-DD") %>   
+                </a>
+                <% if(page.categories.length > 0) { %>
+                <a class="category">
+                    <i class="fa fa-th" aria-hidden="true"></i>  
+                </a>
+               <% } %>
+                <%- list_categories(page.categories,{
+                       show_count: false,
+                        class: 'category'
+                   }) %>
+                <% if(page.tags.length > 0) { %>
+                <a class="tag">
+                    <i class="fa fa-tags" aria-hidden="true"></i>  
+                </a>
+                <% } %>
+                    <%- list_tags(page.tags, {
+                        show_count: false,
+                        class: 'tag'
+                    }) %>
+            </div>
+              <div class="toc">
+  <%- toc(page.content, {list_number: false}) %>
+</div>
+            <div class="content">
+                <%- page.content %>
+            </div>
+        </article>

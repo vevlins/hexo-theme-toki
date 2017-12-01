@@ -1,10 +1,14 @@
 <header class="header">
-    <div class="title">
-    <img src="<%- url_for(theme.Site.Logo) %>" id="logo"/>
-        <a href="<%- url_for() %>" class="logo">
+    <h1>
+        <a class="title" href="<%- url_for(theme.Menu.Home)%>">
             <%= config.title %>
         </a>
-    </div>
+    </h1>
+    <h2>
+        <a class="motto">
+            <%= theme.Site.Motto %>
+        </a>
+    </h2>
     <nav class="navbar">
         <ul class="menu">
             <% for (item in theme.Menu) {%>

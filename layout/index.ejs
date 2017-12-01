@@ -1,19 +1,47 @@
-
 <section class="posts">
     <% page.posts.each(function (post) { %>
         <article class="post">
-            <div class="post-title">
-                <a class="post-title-link" href="<%- url_for(post.path) %>">
-                    <%= post.title %>
+            <h1>
+                <a class="title" href="<%- url_for(post.path) %>"> 
+                    <%= post.title %> 
                 </a>
+            </h1>
+            <div class="meta">
+                <a class="date"> 
+                    <i class="fa fa-calendar" aria-hidden="true"></i>                    
+                    <%- date(post.date, "YYYY-MM-DD") %>   
+                </a>
+                <% if(post.categories.length > 0) { %>
+                <a class="category">
+                    <i class="fa fa-th" aria-hidden="true"></i>  
+                </a>
+               <% } %>
+                <%- list_categories(post.categories,{
+                       show_count: false,
+                        class: 'category'
+                   }) %>
+                <% if(post.tags.length > 0) { %>
+                <a class="tag">
+                    <i class="fa fa-tags" aria-hidden="true"></i>  
+                </a>
+                <% } %>
+                    <%- list_tags(post.tags, {
+                        show_count: false,
+                        class: 'tag'
+                    }) %>
             </div>
-            <div class="post-content">
+            <div class="content">
+                <% if(post.excerpt) {%>
+                <%- post.excerpt %>
+                <%}  else{ %>
                 <%- post.content %>
+                <% } %>
             </div>
-            <div class="post-meta">
-                <span class="post-time">
-                    <%- date(post.date, "YYYY-MM-DD") %>  
-                </span>
+            <div class="continue">
+            <a href="<%- url_for(post.path) %>">
+            <%- __('Post.Continue') -%>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
             </div>
         </article>
         <% }) %>

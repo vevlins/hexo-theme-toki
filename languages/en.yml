@@ -11,3 +11,5 @@ Paginator:
 Post:
   Time: Time
   Category: Category
+  Continue: Continue
+  Tag: Tag

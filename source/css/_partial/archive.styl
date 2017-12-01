@@ -1,23 +1,23 @@
-.archive {
-  margin: 1em auto;
-  padding: 30px 50px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 2px #ddd;
-  .post-archive {
-    list-style: none;
-    padding: 0;
-    .post-item {
-      margin: 5px 0;
-      .post-date {
-        display: inline-block;
-        margin-right: 10px;
-        color: #BABABA;
-      }
-      .post-title {
-        color: #368CCB;
-        text-decoration: none;
-      }
-    }
+.archive{
+  & > * {
+    margin: 0
+    padding: 0
+    color: regular-color
+    font-size: .8em  
+  } 
+  .post-archive{
+     .post-item{
+       padding: .2em 0
+       list-style-type: square
+       .date{
+         margin-right: 1em
+        }
+        .title{
+          float: right
+        color: regular-color
+        text-decoration: none
+        border-bottom: 1px dotted #ccc
+        }
+     }
   }
 }

@@ -1,41 +1,89 @@
-.header {
-  margin-top: 2em
-  margin-bottom: 1em
-  display: flex
-  align-items: baseline
-  justify-content: space-between
-  #logo{
-    width: 2em
-    height: 2em
+.header{
+  & > * {
+    margin: 0
+    padding: 0
+      display: flex
+      justify-content: center
     }
-  .title .logo {
-    color: #AAA;
-    font-size: 2em;
-    font-family: "Comic Sans MS",cursive,LiSu,sans-serif;
-    text-decoration: none;
+  .title{
+    &:hover{
+      color: light-color  
+    }
+    text-decoration: none
+    font-weight: 300
+    font-size: 2.5em
+    color: regular-color
+    font-family: UnifrakturMaguntia;
+	  border-bottom: 1px dotted #ccc;
   }
-  .menu {
-    margin: 0;
-    padding: 0;
-    .menu-item {
-      display: inline-block;
-      margin-right: 10px;
+  .motto{
+    color: light-color
+    font-size: .4em
+    font-weight: 500
+    margin: 1em 0
     }
-    .menu-item-link {
-      color: #AAA;
-      text-decoration: none;
-      &:hover {
-        color: #368CCB;
-      }
+  .navbar{
+    border: solid 1px #eee
+    border-width: 1px 0
+    margin-bottom: 2em
+    .menu{
+      margin: 0
+      padding: 0
+      .menu-item{
+        display: inline-block
+        padding: .4em .8em
+        .menu-item-link{
+          font-size: .8em
+          text-decoration: none
+          color: regular-color
+        }
+      } 
     }
   }
 }
 
-@media only screen and (max-width: 720px){
-  #logo{
-    display:none;
-  }
-  .logo{
-    margin-right: 1em;
-    }
-  }
+
+
+
+
+// .header {
+//   margin-top: 2em
+//   margin-bottom: 1em
+//   display: flex
+//   align-items: baseline
+//   justify-content: space-between
+//   #logo{
+//     width: 2em
+//     height: 2em
+//     }
+//   .title .logo {
+//     color: #AAA;
+//     font-size: 2em;
+//     font-family: "Comic Sans MS",cursive,LiSu,sans-serif;
+//     text-decoration: none;
+//   }
+//   .menu {
+//     margin: 0;
+//     padding: 0;
+//     .menu-item {
+//       display: inline-block;
+//       margin-right: 10px;
+//     }
+//     .menu-item-link {
+//       color: #AAA;
+//       text-decoration: none;
+//       &:hover {
+//         color: #368CCB;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 800px){
+//   #logo{
+//     display:none;
+//   }
+//   .logo{
+//     margin-right: 1em;
+//     }
+//   }

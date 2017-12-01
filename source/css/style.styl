@@ -1,14 +1,34 @@
-body{
-    background-color: #F2F2F2;
-    font-size:1.25rem;
-    font-family: monospace,sans-serif;
-    line-height: 1.5;
-    padding:2% 20%;
+regular-color = #333
+red-color = #c30
+light-color = #444
+@font-face {
+      font-family: "UnifrakturMaguntia";
+      src: url("../font/UnifrakturMaguntia.ttf");
 }
-.code,.gutter{
-    background-color: #333
-    color: #f9f9f9
-    padding: 0 10px
-    }
+@font-face {
+      font-family: "Coustard";
+      src: url("../font/Coustard.ttf");
+}
+html{
+      height: 100%
+}
+body{
+      margin:0
+      height: 100%
+      font-size:1.25rem;
+      font-family: Coustard 
+      line-height: 1.5;
+      padding:0 30%;
+      display:flex;
+      flex-flow: column;
+      align-items: space-between;
+}
+main{
+      flex:1
+}
+
 @import "_partial/header";
 @import "_partial/post";
+@import "_partial/archive";
+@import "_partial/paginator";
+@import "_partial/footer";

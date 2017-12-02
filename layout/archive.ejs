@@ -7,7 +7,7 @@
       <% last = post.date.year()%>
     <%}%>
       <li class="post-item">
-        <span class="date"><%= date(post.date, "YYYY-MM-DD") %></span>
+        <span class="date"><%= date(post.date, "MM-DD") %></span>
         <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
       </li>
     <% }) %>

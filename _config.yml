@@ -1,9 +1,9 @@
 Menu:
   Home: /
-  Archives: /archives
-  About: /about
-  Github: https://github.com/vevlins
-  RSS: /atom.xml
+  Archives: /archives/
+  About: /about/
+  Github: https://github.com/vevlins/
+  RSS: /atom.xml/
 
 Site:
   Logo: img/logo.png

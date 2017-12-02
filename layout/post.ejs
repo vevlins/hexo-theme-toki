@@ -35,5 +35,16 @@
                 <%- page.content %>
             </div>
 </article>
-
+<div class="more">
+<% if(page.prev){%>
+    <div class="prev">
+   <a href="<%- url_for(page.prev.path) %>"> < <%= page.prev.title %></a>
+    </div>
+<%}%>
+<% if(page.next){%>
+    <div class="next">
+    <a href="<%- url_for(page.next.path) %>"><%= page.next.title %> ></a>
+    </div>
+    <%}%>
+</div>
     <%- partial('_partial/comment') %>

@@ -12,16 +12,31 @@ light-color = #444
 html{
       height: 100%
 }
+img{
+      max-width: 100%
+}
+::selection {
+    background:regular-color; 
+    color:white
+}
+
+::-moz-selection {
+    background:regular-color; 
+    color:white
+
+}
+
+::-webkit-selection {
+    background:regular-color; 
+    color:white
+}
 body{
       margin:0
       height: 100%
       font-size:1.25rem;
-      font-family: Coustard ,
-            "华文细黑", "Times New Roman", 
-             "Microsoft YaHei", "微软雅黑", 
-             serif;
+      font-family: 'Noto Serif', 'Times New Roman', serif !important
       line-height: 1.5;
-      padding:0 20%;
+      padding:0 30%;
       display:flex;
       flex-flow: column;
       align-items: space-between;

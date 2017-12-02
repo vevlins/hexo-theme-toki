@@ -7,9 +7,14 @@
     justify-content: center
   }
   .title{
+    &:hover{
+      color: red-color
+    }
+    text-align: center;
     font-size: 1.5em  
     text-decoration: none
-    color: regular-color
+    color: light-color
+    font-weight:300
     margin-bottom: .5em
   }
   .meta{
@@ -29,6 +34,9 @@
         display: inline-block
         margin-right: .3em
         .category-list-link{
+                  &:hover{
+      color: red-color
+    }
           text-decoration: none
           color: light-color
         }
@@ -40,6 +48,9 @@
         display: inline-block
         margin-right: .3em
         .tag-list-link{
+                  &:hover{
+      color: red-color
+    }
           text-decoration: none
           color: light-color
         }
@@ -52,7 +63,7 @@
     color: light-color
     font-size:.8em 
     a:link , a:active , a:visited{
-      color: red-color
+      color: light-color
       padding: 0 .3em
     }
     a:hover{
@@ -62,6 +73,9 @@
     }
   }
   .continue a{
+        &:hover{
+      color: red-color
+    }
     border-bottom: 1px dotted #ccc
     text-decoration: none
     font-size:.7em
@@ -78,7 +92,6 @@
         margin-top: 2em
         border: solid 1px #eee
         margin-bottom: 2em
-        background-color: #f3f3f3
         .toc-item {
           
           .toc-link{
@@ -97,3 +110,32 @@
     }
   }
 
+.more{
+  font-size: .7em
+  & a{
+    &:hover{
+      color: red-color  
+    }
+    text-decoration: none
+    color: light-color
+    border-bottom: 1px dotted #ccc
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis
+  }
+  & > div{
+    width: 30%  
+  }
+  .prev{
+    float:left  
+    a{
+      float:left
+    }
+  }
+  .next{
+    float:right  
+    a{
+      float:right
+    }
+  }
+}

@@ -11,10 +11,10 @@
       color: red-color
     }
     text-align: center;
-    font-size: 1.5em  
+    font-size: 1.2em  
     text-decoration: none
     color: light-color
-    font-weight:300
+    font-weight:600
     margin-bottom: .5em
   }
   .meta{
@@ -112,10 +112,18 @@
 
 .more{
   font-size: .7em
+    display: flex;
+  justify-content: space-between;
+      overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis
+    width: 100%;
   & a{
     &:hover{
       color: red-color  
     }
+    width: 100%
+    display: flex
     text-decoration: none
     color: light-color
     border-bottom: 1px dotted #ccc
@@ -123,19 +131,15 @@
     white-space: nowrap; 
     text-overflow: ellipsis
   }
-  & > div{
-    width: 30%  
-  }
-  .prev{
-    float:left  
-    a{
-      float:left
+  .prev , .next {
+    width: 40%
     }
-  }
-  .next{
-    float:right  
-    a{
-      float:right
+  .prev a {
+    float: left
+    display: block
+    } 
+    .next a {
+    float: right
+    display: block
     }
-  }
 }

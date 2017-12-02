@@ -9,6 +9,14 @@ light-color = #444
       font-family: "Coustard";
       src: url("../font/Coustard.ttf");
 }
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'), url(../font/Wreg0Be4tcFGM2t6VWytvKpkxQ1nyBMhaPnv_ZMXNdQ.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
 html{
       height: 100%
 }
@@ -44,7 +52,17 @@ body{
 main{
       flex:1
 }
-
+@media screen and (max-width:1300px) {
+      body{
+            padding: 0 10%
+      }
+      .title{
+            font-size: 1em!important      
+      }
+      #comments{
+            display: none;      
+      }
+}
 @import "_partial/header";
 @import "_partial/post";
 @import "_partial/archive";

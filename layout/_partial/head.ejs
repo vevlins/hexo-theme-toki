@@ -1,13 +1,16 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <title>
-        <%= config.title %>
+        <% if(page.title){%>
+            <%= page.title %>
+        <%}else{%>
+            <%= config.title %>
+        <%}%>
     </title>
     <link rel="icon" href="/img/favicon.png"/>
     <%- css('css/style.css') %>
     <%- css('css/font-awesome.min.css') %>
-     <%- css('css/gitment.css') %>
-    <%- css('css/hljs.min.css') %>  
-          <%- js('js/hljs.min.js') %>  
-          <%- js('js/gitment.browser.js') %>  
-
+    <%- css('css/gitment.css') %>
+    <%- css('css/hljs.min.css') %>
+    <%- js('js/hljs.min.js') %>  
+    <%- js('js/gitment.browser.js') %>  

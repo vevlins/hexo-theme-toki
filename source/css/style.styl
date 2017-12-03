@@ -3,18 +3,18 @@ red-color = #c30
 light-color = #444
 @font-face {
       font-family: "UnifrakturMaguntia";
-      src: url("../font/UnifrakturMaguntia.ttf");
+      src: url("/font/UnifrakturMaguntia.ttf");
 }
 @font-face {
       font-family: "Coustard";
-      src: url("../font/Coustard.ttf");
+      src: url("/font/Coustard.ttf");
 }
 
 @font-face {
   font-family: 'Noto Serif';
   font-style: italic;
   font-weight: 700;
-  src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'), url(../font/Wreg0Be4tcFGM2t6VWytvKpkxQ1nyBMhaPnv_ZMXNdQ.woff2) format('woff2');
+  src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'), url(/font/Wreg0Be4tcFGM2t6VWytvKpkxQ1nyBMhaPnv_ZMXNdQ.woff2) format('woff2');
   unicode-range: U+1F00-1FFF;
 }
 html{
@@ -38,6 +38,9 @@ img{
     background:regular-color; 
     color:white
 }
+.intro{
+      font-size: .8em      
+}
 body{
       margin:0
       height: 100%
@@ -49,18 +52,21 @@ body{
       flex-flow: column;
       align-items: space-between;
 }
-main{
+main,.search-items{
       flex:1
 }
 @media screen and (max-width:1300px) {
       body{
             padding: 0 10%
       }
-      .title{
-            font-size: 1em!important      
+      .post .title{
+            font-size: 1em!important 
       }
       #comments{
-            display: none;      
+            margin: 0 -5%;   
+      }
+      .gitment-editor-tab:not(.gitment-selected){
+            display:none!important      
       }
       .post .toc .toc{
             padding: 1.2em!important      

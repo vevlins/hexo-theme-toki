@@ -52,6 +52,9 @@
           border: none !important
           font-size: .8em
           color: regular-color
+          text-align: center
+          &::-ms-input-placeholder{text-align: center;} 
+		      &::-webkit-input-placeholder{text-align: center;} 
         } 
         .search-input:focus{
           outline: none!important
@@ -63,46 +66,3 @@
 
 
 
-
-
-// .header {
-//   margin-top: 2em
-//   margin-bottom: 1em
-//   display: flex
-//   align-items: baseline
-//   justify-content: space-between
-//   #logo{
-//     width: 2em
-//     height: 2em
-//     }
-//   .title .logo {
-//     color: #AAA;
-//     font-size: 2em;
-//     font-family: "Comic Sans MS",cursive,LiSu,sans-serif;
-//     text-decoration: none;
-//   }
-//   .menu {
-//     margin: 0;
-//     padding: 0;
-//     .menu-item {
-//       display: inline-block;
-//       margin-right: 10px;
-//     }
-//     .menu-item-link {
-//       color: #AAA;
-//       text-decoration: none;
-//       &:hover {
-//         color: #368CCB;
-//       }
-//     }
-//   }
-// }
-
-// @media only screen and (max-width: 800px){
-//   #logo{
-//     display:none;
-//   }
-//   .logo{
-//     margin-right: 1em;
-//     }
-//   }

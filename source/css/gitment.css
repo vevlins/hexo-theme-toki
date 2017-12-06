@@ -221,7 +221,7 @@ a.gitment-comment-name:visited {
 
 .gitment-editor-tab.gitment-selected {
   color: #333;
-  background-color: #fff;
+  /* background-color: #fff;修正firfox/webkit下边框问题 */
   border-color: #CFD8DC;
 }
 

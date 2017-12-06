@@ -65,3 +65,15 @@ onEnter = function(e){
     })
 }
 }
+
+$(window).scroll(function(){
+    // if(ocument.documentElement.clientWidth <1300) return;
+    var height = document.body.offsetHeight
+    console.log($(window).scrollTop())
+    if($(window).scrollTop()>height/4){
+        console.log('ud')
+        $('#top').show()
+    }else{
+        $('#top').hide()
+    }
+}); 

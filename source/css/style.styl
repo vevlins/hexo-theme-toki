@@ -24,15 +24,29 @@ img{
       max-width: 100%
 }
 ::selection {
-    background:regular-color; 
+    background:regular-color;
     color:white
+}
+iframe{
+      max-width: 100%
 }
 blockquote{
       padding: 1em;
-      border-left: 8px solid  #ff6363 ;
+      border-left: 8px solid  #ff6363
       margin: .5em 0 !important
       background-color:   #f8f4f8
       // color: white
+}
+#top{
+      position: fixed 
+      bottom: 1em
+      right: 2em
+      display: block
+      text-decoration: none
+      color: light-color
+}
+p{
+    text-indent: 2em
 }
 ::-moz-selection {
     background:regular-color; 
@@ -76,6 +90,9 @@ main,.search-items{
       }
       .post .toc .toc{
             padding: 1.8em!important      
+      }
+      #top{
+            display: none
       }
 }
 @import "_partial/header";

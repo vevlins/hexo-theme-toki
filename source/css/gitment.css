@@ -211,7 +211,6 @@ a.gitment-comment-name:visited {
   border-style: solid;
   border-color: transparent;
   border-radius: 0;
-
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
@@ -221,7 +220,8 @@ a.gitment-comment-name:visited {
 
 .gitment-editor-tab.gitment-selected {
   color: #333;
-  /* background-color: #fff;修正firfox/webkit下边框问题 */
+  background-color: #fff;
+  /* 修正firfox/webkit下边框问题 */
   border-color: #CFD8DC;
 }
 

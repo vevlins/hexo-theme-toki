@@ -81,3 +81,13 @@ $(window).scroll(function(){
         $('#top').hide()
     }
 }); 
+
+$('.tip-btn').click(function(){
+    var flex= $('.tip-img').css('display') == 'flex'
+    if(flex){
+        $('.tip-img').css('display','none')
+    }else{
+        $('.tip-img').css('display','flex')
+    }
+    
+})

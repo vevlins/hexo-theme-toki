@@ -34,7 +34,36 @@
             <div class="content">
                 <%- page.content %>
             </div>
+            <blockquote class="copy-right">
+                <div class="name">
+                    <a>本文作者:</a>
+                    <a><%= config.author %></a>
+                </div>
+                <div class="link">
+                    <a>本文链接:</a>
+                    <a class="permalink" href="<%= page.permalink %>"><%= page.permalink %></a>
+                </div>
+                <div class="license">
+                    <a>版权声明:</a>
+                    <a>本博客所有文章除特别声明外，均采用 <a href="">CC BY-NC-SA 3.0 CN </a>许可协议。转载请注明出处！</a>
+                </div>
+            </blockquote>
 </article>
+<div class="tip">
+<button class="tip-btn">
+    打赏
+</button>
+<div class="tip-img">
+<ul>
+<li>
+    <img src="../../../../../../img/qrcode.jpeg"></img>
+</li>
+<li>
+    <img src="../../../../../../img/qrcode.jpeg"></img>
+</li>
+</ul>
+</div>
+</div>
 <div class="more">
 <% if(page.prev){%>
     <div class="prev">

@@ -54,6 +54,8 @@ blockquote{
 }
 p{
     text-indent: 2em
+    word-break: break-all
+    word-wrap: break-word
 }
 ::-moz-selection {
     background:regular-color; 
@@ -67,6 +69,12 @@ p{
 }
 .intro{
       font-size: .8em      
+}
+strong,em{
+      font-weight: 900
+      font-style:normal
+      color: black
+      padding: 0 .3em
 }
 body{
       margin:0
@@ -104,7 +112,10 @@ main,.search-items{
       .tip ul{
             width: 80%!important      
       }
+ 
 }
+
+
 @import "_partial/header";
 @import "_partial/post";
 @import "_partial/archive";

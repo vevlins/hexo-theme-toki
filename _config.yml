@@ -6,15 +6,26 @@ Menu:
   RSS: /atom.xml
 
 Site:
-  Logo: img/logo.png
-  Motto: Ponyo loves Sosuke! 
+  Motto: Ponyo loves Sōsuke! 
 
 Intro:
-  Avastar: img/avastar.jpg
-  SNS:
+  Avastar: img/avastar.jpeg
+  Name: Sōsuke
+  Brief: aimed in front-end 
+  SNS: 
     Weibo: ddd
-    Zhihu: ddd
-    Email: ddd
+    StackOverflow: 
+    Github: https://github.com/Vevlins
+    Pinterest: 
+    Quora: 
+
+CopyRight: 
+  Author: Sōsuke
+  License: CC BY-NC-SA 3.0 CN
+
+Tip:
+  Alipay: /img/qrcode.jpeg
+  Wechat: /img/qrcode.jpeg
 
 Comment:
   Id: 8d83609a651e972e308d

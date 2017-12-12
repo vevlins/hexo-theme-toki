@@ -10,29 +10,39 @@
 
 <div class="intro">
     <div class="base">
-        <img src="../../../../../img/avastar.jpeg" class="avastar"></img>
-        <a class="name">Sōsuke</a>
+        <img src="<%= url_for(theme.Intro.Avastar) %>" class="avastar"></img>
+        <a class="name"><%= theme.Intro.Name %></a>
         <a class="fields">
-        aimed in front-end
+            <%= theme.Intro.Brief %>
         </a>
     </div>
     <div class="sns">
     <ul class="sns-items">
+    <% if(theme.Intro.SNS.StackOverflow) {%>
         <li class="sns-list-item">
-            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+            <a class="fa fa-stack-overflow" aria-hidden="true" href="<%= theme.Intro.SNS.StackOverflow %>"  target="_blank"></a>
         </li>
+    <%}%>
+     <% if(theme.Intro.SNS.Github) {%>
         <li class="sns-list-item" >
-        <i class="fa fa-github-alt" aria-hidden="true"></i>
+            <a class="fa fa-github-alt" aria-hidden="true" href="<%= theme.Intro.SNS.Github %>"  target="_blank"></a>
         </li>
+    <%}%>
+     <% if(theme.Intro.SNS.Weibo) {%>
         <li class="sns-list-item">
-        <i class="fa fa-weibo" aria-hidden="true"></i>
+            <a class="fa fa-weibo" aria-hidden="true" href="<%= theme.Intro.SNS.Weibo %>"  target="_blank"></a>
         </li>
+    <%}%>
+     <% if(theme.Intro.SNS.Pinterest) {%>
         <li class="sns-list-item">
-        <i class="fa fa-pinterest" aria-hidden="true"></i>
+            <a class="fa fa-pinterest" aria-hidden="true" href="<%= theme.Intro.SNS.Pinterest %>"  target="_blank"></a>
         </li>
+    <%}%>
+     <% if(theme.Intro.SNS.Quora) {%>
         <li class="sns-list-item">
-        <i class="fa fa-quora" aria-hidden="true"></i>
+            <a class="fa fa-quora" aria-hidden="true" href="<%= theme.Intro.SNS.Quora %>"  target="_blank"></a>
         </li>
+    <%}%>
     </ul>
     </div>
     <div class="content">

@@ -6,30 +6,7 @@
                     <%= post.title %> 
                 </a>
             </h1>
-            <div class="meta">
-                <a class="date"> 
-                    <i class="fa fa-calendar" aria-hidden="true"></i>                    
-                    <%- date(post.date, "YYYY-MM-DD") %>   
-                </a>
-                <% if(post.categories.length > 0) { %>
-                <a class="category">
-                    <i class="fa fa-th" aria-hidden="true"></i>  
-                </a>
-               <% } %>
-                <%- list_categories(post.categories,{
-                       show_count: false,
-                        class: 'category'
-                   }) %>
-                <% if(post.tags.length > 0) { %>
-                <a class="tag">
-                    <i class="fa fa-tags" aria-hidden="true"></i>  
-                </a>
-                <% } %>
-                    <%- list_tags(post.tags, {
-                        show_count: false,
-                        class: 'tag'
-                    }) %>
-            </div>
+            <%- partial('_partial/meta',{page:post}) %>
             <div class="content">
                 <% if(post.excerpt) {%>
                 <%- post.excerpt %>

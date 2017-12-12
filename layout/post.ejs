@@ -4,66 +4,20 @@
                     <%= page.title %> 
                 </a>
             </h1>
-            <div class="meta">
-                <a class="date"> 
-                    <i class="fa fa-calendar" aria-hidden="true"></i>                    
-                    <%- date(page.date, "YYYY-MM-DD") %>   
-                </a>
-                <% if(page.categories && (page.categories.length > 0)) { %>
-                <a class="category">
-                    <i class="fa fa-th" aria-hidden="true"></i>  
-                </a>
-               <% } %>
-                <%- list_categories(page.categories,{
-                       show_count: false,
-                        class: 'category'
-                   }) %>
-                <% if(page.tags && (page.tags.length > 0)) { %>
-                <a class="tag">
-                    <i class="fa fa-tags" aria-hidden="true"></i>  
-                </a>
-                <% } %>
-                    <%- list_tags(page.tags, {
-                        show_count: false,
-                        class: 'tag'
-                    }) %>
-            </div>
+<%- partial('_partial/meta') %>
+
               <div class="toc">
   <%- toc(page.content, {list_number: false}) %>
 </div>
             <div class="content">
                 <%- page.content %>
             </div>
-            <blockquote class="copy-right">
-                <div class="name">
-                    <a>本文作者:</a>
-                    <a><%= config.author %></a>
-                </div>
-                <div class="link">
-                    <a>本文链接:</a>
-                    <a class="permalink" href="<%= page.permalink %>"><%= page.permalink %></a>
-                </div>
-                <div class="license">
-                    <a>版权声明:</a>
-                    <a>本博客所有文章除特别声明外，均采用 <a href="">CC BY-NC-SA 3.0 CN </a>许可协议。转载请注明出处！</a>
-                </div>
-            </blockquote>
+<%- partial('_partial/copyright') %>
+
+
 </article>
-<div class="tip">
-<button class="tip-btn">
-    打赏
-</button>
-<div class="tip-img">
-<ul>
-<li>
-    <img src="../../../../../../img/qrcode.jpeg"></img>
-</li>
-<li>
-    <img src="../../../../../../img/qrcode.jpeg"></img>
-</li>
-</ul>
-</div>
-</div>
+
+<%- partial('_partial/tip') %>
 <div class="more">
 <% if(page.prev){%>
     <div class="prev">
@@ -77,21 +31,6 @@
     </div>
     <%}%>
 </div>
-
-<div class="bdsharebuttonbox">
-<a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信" style="color:#1cbd8f">
-</a>
-<a href="#" class="bds_tsina fa fa-weibo" data-cmd="tsina" title="分享到新浪微博" style="color:#ff6363">
-</a>
-<a href="#" class="bds_twi fa fa-twitter" data-cmd="twi" title="分享到Twitter" style="color:#00A7EB">
-</a>
-<a href="#" class="bds_fbook fa fa-facebook" data-cmd="fbook" title="分享到Facebook" style="color:#00A7EB">
-</a>
-</div>
-<script>
-window._bd_share_config={
-    "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},
-    "share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='../../../../../static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-</script>
+<%- partial('_partial/share') %>
  
 <%- partial('_partial/comment') %>

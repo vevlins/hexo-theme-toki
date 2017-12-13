@@ -1,0 +1,10 @@
+
+<section class="category">
+<%- list_categories(site.categories,{
+                       show_count: true,
+                        class: 'category',
+                        transform:function(name){
+                            return titlecase(name)
+                        }
+                   }) %>
+</section>

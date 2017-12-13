@@ -1,0 +1,10 @@
+
+<section class="tag">
+<%- list_tags(site.tags,{
+                       show_count: true,
+                        class: 'tag',
+                        transform:function(name){
+                            return titlecase(name)
+                        }
+                   }) %>
+</section>

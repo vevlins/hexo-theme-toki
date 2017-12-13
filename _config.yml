@@ -2,6 +2,8 @@ Menu:
   Home: /
   Archives: /archives/
   About: /about/
+  # Category: /category_archive
+  # Tag: /tag_archive
   Github: https://github.com/vevlins/
   RSS: /atom.xml
 

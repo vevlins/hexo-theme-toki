@@ -1,3 +1,15 @@
+            <% if(page.citation){ %>
+                       <blockquote class="copy-right">
+                <div class="name">
+                    <a>原文作者:</a>
+                    <a><%= page.citation.name %></a>
+                </div>
+                <div class="link">
+                    <a>转载来源:</a>
+                    <a class="permalink" href="<%= page.citation.link %>" target="_blank"><%= page.citation.link %></a>
+                </div>
+            </blockquote>
+           <%}else{%>
             <blockquote class="copy-right">
                 <div class="name">
                     <a>本文作者:</a>
@@ -12,3 +24,4 @@
                     <a>本博客所有文章除特别声明外，均采用 <%= theme.CopyRight.License %> 许可协议。转载请注明出处！</a>
                 </div>
             </blockquote>
+            <%}%>

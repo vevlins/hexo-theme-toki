@@ -29,6 +29,16 @@ img{
     background:regular-color;
     color:white
 }
+::-moz-selection {
+    background:regular-color; 
+    color:white
+
+}
+
+::-webkit-selection {
+    background:regular-color; 
+    color:white
+}
 iframe{
       max-width: 100%
       display: flex
@@ -59,16 +69,22 @@ p{
     word-break: break-all
     word-wrap: break-word
 }
-::-moz-selection {
-    background:regular-color; 
-    color:white
+
+pre *::selection {
+    background:white!important
+    color:black!important
+}
+pre *::-moz-selection {
+    background:white!important
+    color:black!important
 
 }
 
-::-webkit-selection {
-    background:regular-color; 
-    color:white
+pre *::-webkit-selection {
+    background:white!important
+    color:black!important
 }
+
 .intro{
       font-size: .8em      
 }
@@ -128,3 +144,6 @@ main,.search-items{
 @import "_partial/footer";
 @import "_partial/comment";
 @import "_partial/about";
+@import "_partial/category";
+@import "_partial/tag";
+      

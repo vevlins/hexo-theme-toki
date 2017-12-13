@@ -1,0 +1,45 @@
+  .meta{
+    margin-bottom: 1em
+    & > *{
+      margin: 0
+      padding: 0  
+      font-size: .7em
+      color:light-color
+      margin-right: .5em
+    }
+    .date{
+      white-space: nowrap
+    }
+    .category-list{
+      white-space:nowrap
+      .category-list-item{
+        display: inline-block
+        margin-right: .3em
+        white-space:nowrap
+        .category-list-link{
+                  &:hover{
+      color: red-color
+    }
+          text-decoration: none
+          color: light-color
+        }
+      } 
+    }
+
+    .tag-list{
+      white-space:nowrap
+      .tag-list-item{
+        white-space:nowrap
+        display: inline-block
+        margin-right: .3em
+        .tag-list-link{
+                  &:hover{
+      color: red-color
+    }
+          text-decoration: none
+          color: light-color
+        }
+      } 
+    }
+
+  }

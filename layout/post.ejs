@@ -5,10 +5,7 @@
                 </a>
             </h1>
 <%- partial('_partial/meta') %>
-
-              <div class="toc">
-  <%- toc(page.content, {list_number: false}) %>
-</div>
+<%- partial('_partial/toc') %>
             <div class="content">
                 <%- page.content %>
             </div>

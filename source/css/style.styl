@@ -1,10 +1,7 @@
 regular-color = #333
 red-color =  #c30
 light-color = #444
-@font-face {
-      font-family: "UnifrakturMaguntia";
-      src: url("/font/UnifrakturMaguntia.ttf");
-}
+
 @font-face {
       font-family: "Coustard";
       src: url("/font/Coustard.ttf");
@@ -22,34 +19,16 @@ light-color = #444
 html{
       height: 100%
 }
-img{
-      max-width: 100%
-}
-::selection {
-    background:regular-color;
-    color:white
-}
-::-moz-selection {
-    background:regular-color; 
-    color:white
-
-}
-
-::-webkit-selection {
-    background:regular-color; 
-    color:white
-}
-iframe{
-      max-width: 100%
-      display: flex
-      align-self: center
-}
-blockquote{
-      padding: 1em;
-      border-left: 8px solid  #ff6363
-      margin: .5em 0 !important
-      background-color:   #f8f9f9 
-      // color: white
+body{
+      margin:0
+      height: 100%
+      font-size:1.25rem;
+      font-family: 'Noto Serif', 'Times New Roman', serif !important
+      line-height: 1.5;
+      padding:0 30%;
+      display:flex;
+      flex-flow: column;
+      align-items: space-between;
 }
 .not-found{
       display:none
@@ -64,53 +43,11 @@ blockquote{
       text-decoration: none
       color: light-color
 }
-p{
-    text-indent: 2em
-    word-break: break-all
-    word-wrap: break-word
-}
 
-pre *::selection {
-    background:white!important
-    color:black!important
-}
-pre *::-moz-selection {
-    background:white!important
-    color:black!important
-
-}
-
-pre *::-webkit-selection {
-    background:white!important
-    color:black!important
-}
-
-.intro{
-      font-size: .8em      
-}
-strong,em{
-      font-weight: 900
-      font-style:normal
-      color: black
-      padding: 0 .3em
-}
-body{
-      margin:0
-      height: 100%
-      font-size:1.25rem;
-      font-family: 'Noto Serif', 'Times New Roman', serif !important
-      line-height: 1.5;
-      padding:0 30%;
-      display:flex;
-      flex-flow: column;
-      align-items: space-between;
-}
-svg{
-      max-width: 100%;
-}
 main,.search-items{
       flex:1
 }
+
 @media screen and (max-width:1300px){
       body{
             padding: 0 10%
@@ -124,7 +61,7 @@ main,.search-items{
       .gitment-editor-tab:not(.gitment-selected){
             display:none!important      
       }
-      .post .toc .toc{
+      .post .toc .toc-list{
             padding: 1.8em!important      
       }
       #top{
@@ -146,4 +83,8 @@ main,.search-items{
 @import "_partial/about";
 @import "_partial/category";
 @import "_partial/tag";
-      
+@import "_partial/copyright";
+@import "_partial/meta";
+@import "_partial/share";
+@import "_partial/tip";
+@import "_partial/toc";

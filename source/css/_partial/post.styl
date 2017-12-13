@@ -6,6 +6,19 @@
     display: flex
     justify-content: center
   }
+  ::selection {
+    background:regular-color;
+    color:white
+  }
+  ::-moz-selection {
+      background:regular-color; 
+      color:white
+
+  }
+  ::-webkit-selection {
+      background:regular-color; 
+      color:white
+  }
   .title{
     &:hover{
       color: red-color
@@ -17,51 +30,7 @@
     font-weight:600
     margin-bottom: .3em
   }
-  .meta{
-    margin-bottom: 1em
-    & > *{
-      margin: 0
-      padding: 0  
-      font-size: .7em
-      color:light-color
-      margin-right: .5em
-    }
-    .date{
-      white-space: nowrap
-    }
-    .category-list{
-      white-space:nowrap
-      .category-list-item{
-        display: inline-block
-        margin-right: .3em
-        white-space:nowrap
-        .category-list-link{
-                  &:hover{
-      color: red-color
-    }
-          text-decoration: none
-          color: light-color
-        }
-      } 
-    }
 
-    .tag-list{
-      white-space:nowrap
-      .tag-list-item{
-        white-space:nowrap
-        display: inline-block
-        margin-right: .3em
-        .tag-list-link{
-                  &:hover{
-      color: red-color
-    }
-          text-decoration: none
-          color: light-color
-        }
-      } 
-    }
-
-  }
   .content{
     display:block 
     color: light-color
@@ -74,13 +43,46 @@
     a:hover{
       background-color: red-color
       opacity: .8
-      color:#fff
+      color:white
     }
-
+    pre *::selection {
+    background:white!important
+    color:black!important
+}
+    pre *::-moz-selection {
+        background:white!important
+        color:black!important
+    }
+    pre *::-webkit-selection {
+        background:white!important
+        color:black!important
+    }
+    iframe{
+          max-width: 100%
+          display: flex
+          align-self: center
+    }
     p{
       text-indent: 2em
+      word-break: break-all
+       word-wrap: break-word
+    }
+    svg{
+      max-width: 100%;
     }
     //markdown语法设置
+    strong,em{
+      font-weight: 900
+      font-style:normal
+      color: black
+      padding: 0 .3em
+    }
+    blockquote{
+      padding: 1em;
+      border-left: 8px solid  #ff6363
+      margin: .5em 0 !important
+      background-color:   #f8f9f9 
+}
     hr{
       border:none
       border-bottom: 1px dotted #ccc
@@ -88,9 +90,6 @@
     table{
       padding: 0;
       border-collapse: collapse;
-    }
-    tr:nth-child(odd){
-
     }
     tr:nth-child(even){
       background-color:#EEEEEE
@@ -100,54 +99,24 @@
       margin: 0
       padding: .3em .5em
     }
+  img{
+    display:block;
+    position:relative;
+    margin: 1em auto;
   }
-  .continue a{
-        &:hover{
-      color: red-color
-    }
-    border-bottom: 1px dotted #ccc
-    text-decoration: none
-    font-size:.7em
-    color: light-color
   }
-
-    .toc{
-      justify-content: start 
-      font-size: .9em
-      color:light-color
-      
-      .toc{
-        padding: 2em 5em
-        margin-top: 2em
-        border: solid 1px #eee
-        margin-bottom: 2em
-        .toc-item {
-          
-          .toc-link{
-            color: light-color
-            text-decoration: none
-            border-bottom: 1px dotted #ccc
-            padding: 0 .3em
-            &:hover{
-              opacity: .8
-              background-color: red-color
-              color:white  
-            }
-          }
-        }
+    .continue a{
+          &:hover{
+        color: red-color
       }
+      border-bottom: 1px dotted #ccc
+      text-decoration: none
+      font-size:.7em
+      color: light-color
     }
   }
 
-*:not(pre) code{
-  background-color: #eaeaea
-  padding: .1em
-  font-weight: 300
-  margin: 0 .2em
-  font-family: 'Noto Serif', 'Times New Roman', serif !important
-  border: 1px solid rgba(51, 51, 51, 0.1)
-  border-radius: .1em
-}
+
 .more{
   font-size: .7em
     display: flex;
@@ -179,90 +148,5 @@
     .next a {
     float: right
     display: block
-    }
-}
-p{
-  img{
-    display:block;
-    position:relative;
-    margin: 1em auto;
-  }
-}
-.write{
-margin-left: 0 !important
-  }
-
-.bdsharebuttonbox{
-    padding-top: 2em
-  display: flex
-  justify-content: center
-  a{
-    background-image: none!important
-    text-decoration: none
-    font-size: .8em!important
-  }  
-}
-.copy-right{
-  overflow:hidden
-  flex-direction:column
-  display:flex  
-  margin-top:3em!important
-  padding: 1em
-  font-size: .8em
-  *{
-    overflow: hidden
-    word-break: break-all
-    white-space:normal;
-  }
-  a:link,a:visited{
-    color: #ff6363!important
-    text-decoration: none
-  }
-}
-.tip{
-  margin-bottom:1em
-  display: flex
-  justify-content: center
-  flex-direction: column
-  button{
-    align-self: center
-    background-color: #ff6363;
-    border: none;
-    color: white;
-    font-size: .8em
-    padding: .4em .9em  
-    border-radius: .3em
-    font-weight: 400
-    }
-    button:active{ 
-      opacity: .9
-      -moz-box-shadow: 2px 2px 2px  #ddd; /* 老的 Firefox */
-      box-shadow: 2px 2px 2px #ddd;
-    }
-    .tip-img{
-      align-self: center
-      width: 100%;
-      align-items: center
-      display: flex
-      align-content: center
-      justify-content: center
-      display: none
-    }
-    ul{
-      width: 60%
-      margin: .5em 0 0 0 
-      padding: .5em
-      display: flex
-      justify-content: space-between;
-      // background-color: #f8f9f9
-      li{
-        list-style-type: none
-        display: inline-block
-        img{
-          width: 100%
-          height: 100%
-          max-width: 6em
-        }
-      }
     }
 }

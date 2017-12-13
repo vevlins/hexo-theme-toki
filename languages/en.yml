@@ -9,7 +9,16 @@ Paginator:
   Next: Next
 
 Post:
-  Time: Time
-  Category: Category
   Continue: Continue
-  Tag: Tag
+
+Copyright:
+  Original:
+    Author: Author
+    Link: Link
+    Statement: Statement
+    License: All articles in this blog shall be licensed by %s, unless otherwise stated. Please indicate the provenance!
+  Citation:
+    Author: Author
+    Link: Link
+
+Tip: Tip

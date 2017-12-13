@@ -1,27 +1,27 @@
             <% if(page.citation){ %>
                        <div class="copyright">
                 <div class="name">
-                    <a>原文作者:</a>
+                    <a><%= __('Copyright.Citation.Author') %>:</a>
                     <a><%= page.citation.name %></a>
                 </div>
                 <div class="link">
-                    <a>转载来源:</a>
+                    <a><%= __('Copyright.Citation.Link')%>:</a>
                     <a class="permalink" href="<%= page.citation.link %>" target="_blank"><%= page.citation.link %></a>
                 </div>
             </div>
            <%}else{%>
             <div class="copyright">
                 <div class="name">
-                    <a>本文作者:</a>
+                    <a><%= __('Copyright.Original.Author')%>:</a>
                     <a><%= theme.CopyRight.Author %></a>
                 </div>
                 <div class="link">
-                    <a>本文链接:</a>
+                    <a><%= __('Copyright.Original.Link')%>:</a>
                     <a class="permalink" href="<%= page.permalink %>"><%= page.permalink %></a>
                 </div>
                 <div class="license">
-                    <a>版权声明:</a>
-                    <a>本博客所有文章除特别声明外，均采用 <%= theme.CopyRight.License %> 许可协议。转载请注明出处！</a>
+                    <a><%= __('Copyright.Original.Statement') %>:</a>
+                    <a><%= _p('Copyright.Original.License', theme.CopyRight.License) %></a>
                 </div>
             </div>
             <%}%>

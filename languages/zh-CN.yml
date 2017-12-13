@@ -1,7 +1,7 @@
 Menu:
   Home: 首页
   Archives: 归档
-  Github: 软件仓
+  Github: Github
   About: 关于
 
 Paginator:
@@ -9,7 +9,16 @@ Paginator:
   Next: 下一页
 
 Post:
-  Time: 时间
-  Category: 分类
   Continue: 继续阅读
-  Tag: 标签
+
+Copyright:
+  Original:
+    Author: 本文作者
+    Link: 本文链接
+    Statement: 版权声明
+    License: 本博客所有文章除特别声明外，均采用许可协议 %s。转载请注明出处！
+  Citation:
+    Author: 原文作者
+    Link: 转载来源
+
+Tip: 打赏

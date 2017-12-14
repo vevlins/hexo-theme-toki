@@ -1,0 +1,87 @@
+body{
+    font-size: 1em;
+    font-family: Georgia,"PingFang SC","Microsoft Yahei", Helvetica, arial,serif;
+    line-height: 1.5;
+    background-color: white;
+    color: light-blue-color;
+    padding:2em 0;
+}
+h1,h2,h3,h4,h5,h6{
+    color: blue-color;
+    border-bottom: 1px solid light-blue-color;
+}
+p{
+    text-indent: 2em;
+}
+blockquote{
+    padding-left:1em;
+    border-left: .4em solid light-blue-color;
+    background-color: #F7F9FA;
+    padding: .3em .5em;
+    margin: 1em 0 1em 0;
+}
+.headerlink{
+    text-decoration: none
+    &::before{
+    content: '#'
+    }
+}
+*:not(pre) code{
+    background-color: #F7F9FA;
+    padding: .1em .2em;
+    border: 1px solid   #eaeded;
+    margin: .2em;
+    font-size: .9em
+    color:  #66bb6a
+    border-radius: 3px;
+    overflow: hidden;
+}
+a{
+    padding: .1em
+}
+a:link,a:active,a:visited{
+   color: #A0AABF;
+   font-style: italic;
+}
+a:hover{
+    color:  #aeb6bf  ;
+}
+pre{
+    display: block;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: #f7f9f9  ;
+    padding: .6em;
+    border: 1px solid #eaeded;
+    border-radius: 3px;
+}
+pre code{
+    color: blue-color!important
+    display: block;
+     overflow: scroll;
+    word-wrap: break-word;
+    word-break: break-all; 
+    background-color: inherit;
+    border: none!important;
+}
+hr{
+    border: none;
+    border-bottom: 2px dashed #ccc;
+    margin: 1em 5em;
+}
+sup a{
+    padding: 0!important;
+    font-style: normal!important;
+}
+table{
+    border-collapse: collapse;   
+    background-color:  #f8f9f9 ;
+}
+tr,td,th{
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0.3em 0.5em;
+}
+tr:nth-child(even){
+    background-color:   #ebedef ;
+}

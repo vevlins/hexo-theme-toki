@@ -3,12 +3,14 @@
       font-size: .9em
       color:light-color
       .toc-list{
-        padding: 2em 5em
+        font-size: .9em
         margin-top: 2em
-        border: solid 1px #eee
-        margin-bottom: 2em
+        padding-left: 2em
+        border-left: .3em solid blue-color
         .toc-list-item {
-          
+          .toc-list-child{
+            padding-left: 2em  
+          }
           .toc-list-link{
             color: light-color
             text-decoration: none
@@ -16,8 +18,6 @@
             padding: 0 .3em
             &:hover{
               opacity: .8
-              background-color: red-color
-              color:white  
             }
           }
         }

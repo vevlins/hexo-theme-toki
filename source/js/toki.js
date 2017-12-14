@@ -1,7 +1,7 @@
 var url = window.location.href
 var items = document.querySelectorAll('.menu-item-link')
 items.forEach(function(item){
-    if(item.href == url) {item.style.color = '#c30'}else{
+    if(item.href == url) {item.style.color = '#607d8b'}else{
         item.style.color = '#333'
     }
 })
@@ -72,7 +72,7 @@ onEnter = function(e){
 }
 }
 
-$(window).scroll(function(){
+window.onscroll = function(){
     if(document.documentElement.clientWidth <1300) return;
     var height = document.body.offsetHeight
     if($(window).scrollTop()>height/4){
@@ -80,7 +80,7 @@ $(window).scroll(function(){
     }else{
         $('#top').hide()
     }
-}); 
+}
 
 $('.tip-btn').click(function(){
     var flex= $('.tip-img').css('display') == 'flex'

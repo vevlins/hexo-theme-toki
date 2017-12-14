@@ -15,9 +15,11 @@ search.onclick = function(e){
     search_input.focus()
 
 }
-search_input.onblur = function(){
-    search_input.style.display = 'none'
-    search.style.display = 'block'
+search_input.onblur = function(e){
+    setTimeout(function(){
+        search_input.style.display = 'none'
+        search.style.display = 'block'
+    }, 50);
 }
 function matcher(post, regExp) {
     // 匹配优先级：title > tags > text

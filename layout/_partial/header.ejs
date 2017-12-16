@@ -12,13 +12,15 @@
     <nav class="navbar">
         <ul class="menu">
             <% for (item in theme.Menu) {%>
+            <% if( item !== 'Search'){%>
                 <li class="menu-item">
                     <a href="<%- url_for(theme.Menu[item]) %>" class="menu-item-link">
                         <%= item %>
                     </a>
                 </li>
+            <%}%>
                 <% } %>
-
+                <% if(theme.Menu.Search){%>
                 <li class="menu-item">
                     <a class="menu-item-link search">
                         Search                   
@@ -26,6 +28,7 @@
                     </a>
                         <input placeholder="Search..." class="search-input" style="display:none;border:none!important;" onkeydown="onEnter(event)" onkeypress="onEnter(event)"></input>
                 </li>
+                <%}%>
         </ul>
     </nav>
 </header>

@@ -1,4 +1,5 @@
-            <% if(page.citation){ %>
+          <% if (theme.CopyRight) {%>
+           <% if(page.citation){ %>
                        <div class="copyright">
                 <div class="name">
                     <a><%= __('Copyright.Citation.Author') %>:</a>
@@ -25,3 +26,5 @@
                 </div>
             </div>
             <%}%>
+
+          <%}%>

@@ -5,12 +5,16 @@
 </button>
 <div class="tip-img">
 <ul>
+    <% if(theme.Tip.Alipay){%>
 <li>
     <img src="<%= url_for(theme.Tip.Alipay) %>"></img>
 </li>
+<%}%>
+ <% if(theme.Tip.Wechat){%>
 <li>
     <img src="<%= url_for(theme.Tip.Wechat) %>"></img>
 </li>
+<%}%>
 </ul>
 </div>
 </div>

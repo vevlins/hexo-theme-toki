@@ -6,7 +6,8 @@ Menu:
   # Tag: /tag_archive
   Github: https://github.com/vevlins/
   RSS: /atom.xml
-
+  Search: true
+  
 Site:
   Motto: Ponyo loves Sōsuke! 
 

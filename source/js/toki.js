@@ -65,7 +65,6 @@ onEnter = function(e){
         var regExp = new RegExp(key.replace(/[ ]/g, '|'), 'gmi');
         console.log(regExp)
         $.get('../../../../../../../content.json',function(data){
-
             var result = data.filter(function(post) {
                 return matcher(post, regExp);
             })

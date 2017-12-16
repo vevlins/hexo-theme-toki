@@ -19,10 +19,15 @@ $(document).ready(function(){
     
     }
     search_input.onblur = function(e){
-        setTimeout(function(){
+        if($('search-items').html()){
+            setTimeout(function(){
+                search_input.style.display = 'none'
+                search.style.display = 'block'
+            }, 200);
+        }else{
             search_input.style.display = 'none'
             search.style.display = 'block'
-        }, 50);
+        }
     }
     function matcher(post, regExp) {
         // 匹配优先级：title > tags > text

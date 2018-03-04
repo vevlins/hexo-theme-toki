@@ -7,10 +7,20 @@
 .gitment-editor-main{
    font-family: 'Noto Serif', 'Times New Roman', serif !important
 }
+.gitment-editor-main.gitment-white-triangle::after{
+    border-right-color: #fff!important
+}
+.gitment-editor-main:not(.gitment-white-triangle)::after{
+    border-right-color: #f8f8f8!important
+}
+.gitment-comment-main::after{
+    border-right-color: #f8f8f8!important
+}
 .gitment-comment-header{
     background-color: #f9f9f9
 }
 .gitment-editor-preview{
+    background-color: #fff
        font-family: 'Noto Serif', 'Times New Roman', serif !important
 }
 .gitment-editor-logout-link,.gitment-editor-login-link{

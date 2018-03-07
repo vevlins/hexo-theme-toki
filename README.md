@@ -2,7 +2,7 @@
 hexo-theme-toki主题
 
 ##todo：
-    满足自定义配置，如评论方案的选取；修改ie内核search和页脚显示的兼容问题
+    满足自定义配置，如评论方案的选取;修改blink内核下图像混合无效问题
 ## 一款简单素雅的博客主题
 [Demo页面](http://vevlins.github.io)
 ![](http://ozc9m7ly1.bkt.clouddn.com/2.png)
